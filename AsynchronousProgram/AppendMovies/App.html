@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie App</title>
+  <style>
+    .movie-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .movie-card {
+      width: calc(33.333% - 20px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .movie-poster {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="movie-grid" id="movieGrid"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+background-color: rgb(16, 2, 2);
+color: #d8d3d3;
+}
+html, body{
+height: 100%;
+width: 100%;
+}
+#card_container{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+#card_container> div{
+height: 280px;
+border-radius: 8px;
+overflow: hidden;
+width: 195px;
+/* border: 1px solid red; */
+}
+
+#card_container>div a>img{
+height: 100%;
+width: 100%;
+/* border: 1px solid red; */
+/* object-fit:cover; */
+}
+
+#card_container> div >a{
+height: 100%;
+width: 100%;
+object-fit: contain;
+
+}
+
+
+
+/* -------------------------------footer design---------------------------------------------- */
+#footerContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-gap: 20px;
+    background-color: rgb(18, 18, 18);
+    color: white;
+  }
+
+  /* ----------Socia; media icons ------------- */
+  #smIcons{
+    font-size: 25px;
+    padding: 10px;
+    gap: 15px;
+    color: rgb(13, 13, 13);
+    margin-left: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: white; 
+  }
+
+  #icon {
+    display: flex;
+  }
+
+  #icon h3{
+    font-size: 40px;
+    padding: 25px;
+  }
+  
+  #sec h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+     margin-left: 20px;
+     color: white;
+  }
+  
+  #sec ul li {
+    /* list-style: none; */
+    margin-bottom: 15px;
+    margin-left: 20px;
+    color: white;
+  }
+  
+  #sec ul li a{
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: white;
+  } 
+  
+  #thrid h2 {
+    margin-top: 10px;
+  margin-bottom: 15px;
+  color: white;
+  }
+  
+  #thrid ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    color: white;
+  }
+  #thrid ul li a{
+    text-decoration: none;
+    color: white;
+  
+  }
+  #fourth h2{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: white;
+  }
+  #fourth ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    color: white;
+  }
+  #fourth ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  /* <!-- ------------footer upper part --------------> */
+
+  .mainContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    background-color: rgb(18, 18, 18);
+    color: white; 
+  } 
+
+
+  #trending h4{
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+  } 
+
+   #trending ul li{
+    text-align: justify;
+    gap: 5px;
+    margin: 7px;
+    list-style: none;
+    color: white;
+  }
+  
+  #trending ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* <!-----------------statement part 1----------------> */
+  .statement{
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 20px;
+    background-color: rgb(18, 18, 18);
+    color: white;
+  }
+
+  /*--- Read more------ */
+  #more{        
+    display: none;
+  }
+
+  button{
+    color: blue;
+    border: none;
+  }
+  /* .Social-media{
+    display: flex;
+    background-color: aliceblue;
+  } */
+  
+  /* Styles for mobile and tablets */
+  @media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
+    }
+  
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .slider-wrapper .image-list .image-item {
+      width: 280px;
+      height: 380px;
+    }
+  
+    .slider-scrollbar .scrollbar-thumb {
+      width: 20%;
+    }
+  }

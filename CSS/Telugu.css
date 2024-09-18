@@ -1,0 +1,391 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+background-color: rgb(16, 2, 2);
+color: #d8d3d3;
+}
+html, body{
+height: 100%;
+width: 100%;
+}
+
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-tabs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.header-tabs li {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
+} 
+
+#container {
+  padding: 0;
+  position: fixed;
+  width:100%;
+  background-image:linear-gradient(black, rgb(0, 0, 0),rgba(0, 0, 0, 0.358));
+  box-shadow: -2px -2px 5px white,2px -2px 5px white;
+  z-index:  4;
+}
+
+#container > header {
+  width:100%;
+  display:flex;
+  max-height:60px;
+}
+
+ #logo  {
+  font-size:30px;
+  padding: 0 50px;
+  padding-left: 20px;
+  color: white;
+  display: flex;
+  cursor: pointer;
+  height: 60px;
+  width: 160px;
+  text-decoration: none rgb(0, 0, 0);
+ 
+ } 
+ .logo-img{
+  width: 1.4em;
+  height: 1.4em; 
+  margin-top: 10px;
+  word-spacing: 0px;
+  padding-left: 10px;
+ }
+
+#MX{ 
+  font-weight: 600;
+  margin-top: 10px;
+ } 
+  #PLAYER{
+   font-weight: 100;
+  margin-top: 10px;
+ } 
+
+.MXPlayer{
+  margin-top: 2px;
+}
+
+.header-tabs{
+  list-style-type:none;
+  align-items: center;
+  display: flex;
+  text-align: start;
+  padding-left: 70px;
+}
+.header-tabs2{
+width: 240px;
+list-style-type:none;
+align-items: center;
+display: flex;
+padding-left: 120px; 
+}
+
+#container > header > ul > li {
+  line-height:60px;
+  margin: 0 0px;
+  padding:0;
+  text-align:center;
+} 
+
+#container > header > ul > li > a {
+  position:relative;
+  margin: 0 20px;
+    color:white;
+    text-decoration: none;
+}
+
+.hoverBlue:hover{
+  color: rgb(0, 121, 255);
+}
+#container > header > ul > li:hover {
+   border-bottom: 2px solid white; 
+  color: rgb(0, 121, 255);
+}
+#container > header > ul > .dropdown:hover >  .dd {
+  display:block;
+  border-radius: bottom 10px red;
+}
+
+a{
+  text-decoration: none;
+}
+
+#container > header > ul > li > div {
+  position:absolute;
+  padding: 0 10px;
+  background-color:rgb(255, 255, 255);
+  display:none;
+  background-color:black;
+}
+
+#container > header > ul > li > div > ul {
+  margin:0px 0 10px 0;
+  padding:0;
+  list-style:none;
+}
+
+#container > header > ul > li > div > ul > li > a {
+  padding : 5px;
+    color:white;
+}
+
+
+.rigth-container{
+  color:white;
+  list-style: none;
+display: flex;
+padding-right: 1rem;
+}
+.rigth-container i{
+display: flex;
+padding-right: 1rem;
+
+}
+.rigth-container li a {
+color:white;
+text-decoration: none;
+padding-right: 1rem;
+}
+
+div #menu-btn{
+color: white;
+}
+
+#card_container{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+#card_container> div{
+height: 280px;
+border-radius: 8px;
+overflow: hidden;
+width: 195px;
+/* border: 1px solid red; */
+}
+
+#card_container>div a>img{
+height: 100%;
+width: 100%;
+/* border: 1px solid red; */
+/* object-fit:cover; */
+}
+
+#card_container> div >a{
+height: 100%;
+width: 100%;
+object-fit: contain;
+
+}
+
+
+
+/* -------------------------------footer design---------------------------------------------- */
+#footerContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-gap: 20px;
+    background-color: rgb(18, 18, 18);
+    color: white;
+  }
+
+  /* ----------Socia; media icons ------------- */
+  #smIcons{
+    font-size: 25px;
+    padding: 10px;
+    gap: 15px;
+    color: rgb(13, 13, 13);
+    margin-left: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: white; 
+  }
+
+  #icon {
+    display: flex;
+  }
+
+  #icon h3{
+    font-size: 40px;
+    padding: 25px;
+  }
+  
+  #sec h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+     margin-left: 20px;
+     color: white;
+  }
+  
+  #sec ul li {
+    /* list-style: none; */
+    margin-bottom: 15px;
+    margin-left: 20px;
+    color: white;
+  }
+  
+  #sec ul li a{
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: white;
+  } 
+  
+  #thrid h2 {
+    margin-top: 10px;
+  margin-bottom: 15px;
+  color: white;
+  }
+  
+  #thrid ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    color: white;
+  }
+  #thrid ul li a{
+    text-decoration: none;
+    color: white;
+  
+  }
+  #fourth h2{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: white;
+  }
+  #fourth ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    color: white;
+  }
+  #fourth ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  /* <!-- ------------footer upper part --------------> */
+
+  .mainContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    background-color: rgb(18, 18, 18);
+    color: white; 
+  } 
+
+
+  #trending h4{
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+  } 
+
+   #trending ul li{
+    text-align: justify;
+    gap: 5px;
+    margin: 7px;
+    list-style: none;
+    color: white;
+  }
+  
+  #trending ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* <!-----------------statement part 1----------------> */
+  .statement{
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 20px;
+    background-color: rgb(18, 18, 18);
+    color: white;
+  }
+
+  /*--- Read more------ */
+  #more{        
+    display: none;
+  }
+
+  button{
+    color: blue;
+    border: none;
+  }
+  /* .Social-media{
+    display: flex;
+    background-color: aliceblue;
+  } */
+  
+  /* Styles for mobile and tablets */
+  @media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
+    }
+  
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .slider-wrapper .image-list .image-item {
+      width: 280px;
+      height: 380px;
+    }
+  
+    .slider-scrollbar .scrollbar-thumb {
+      width: 20%;
+    }
+  }

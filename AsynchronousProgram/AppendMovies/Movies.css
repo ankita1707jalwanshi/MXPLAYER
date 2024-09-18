@@ -1,0 +1,44 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+background-color: rgb(16, 2, 2);
+color: #d8d3d3;
+}
+html, body{
+height: 100%;
+width: 100%;
+}
+#card_container{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+#card_container> div{
+height: 280px;
+border-radius: 8px;
+overflow: hidden;
+width: 195px;
+/* border: 1px solid red; */
+}
+
+#card_container>div a>img{
+height: 100%;
+width: 100%;
+/* border: 1px solid red; */
+/* object-fit:cover; */
+}
+
+#card_container> div >a{
+height: 100%;
+width: 100%;
+object-fit: contain;
+
+}

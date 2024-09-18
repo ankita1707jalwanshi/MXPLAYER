@@ -1,0 +1,596 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  background-color: rgb(16, 2, 2);
+  color: #d8d3d3;
+  }
+  .white{
+    color: white;
+  }
+  .blue{
+    color: blue;
+    font-size: x-large;
+  }
+  .black{
+    color: black;
+  } 
+  body {
+    background-color:#1b15155f;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  /* ----------------------------------------- nav bar-------------------------------------------------------------- */
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .header-tabs li {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .show {
+    display: block;
+  } 
+  
+  #container {
+    padding: 0;
+    position: fixed;
+    width:100%;
+    background-image:linear-gradient(black, rgb(0, 0, 0),rgba(0, 0, 0, 0.358));
+    box-shadow: -2px -2px 5px white,2px -2px 5px white;
+    z-index:  4;
+  }
+  
+  #container > header {
+    width:100%;
+    display:flex;
+    max-height:60px;
+  }
+  
+   #logo  {
+    font-size:30px;
+    padding: 0 50px;
+    padding-left: 20px;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    height: 60px;
+    width: 160px;
+    text-decoration: none rgb(0, 0, 0);
+   
+   } 
+   .logo-img{
+    width: 1.4em;
+    height: 1.4em; 
+    margin-top: 10px;
+    word-spacing: 0px;
+    padding-left: 10px;
+   }
+  
+  #MX{ 
+    font-weight: 600;
+    margin-top: 10px;
+   } 
+    #PLAYER{
+     font-weight: 100;
+    margin-top: 10px;
+   } 
+  
+  .MXPlayer{
+    margin-top: 2px;
+  }
+  
+  .header-tabs{
+    list-style-type:none;
+    align-items: center;
+    display: flex;
+    text-align: start;
+    padding-left: 70px;
+  }
+  .header-tabs2{
+  width: 240px;
+  list-style-type:none;
+  align-items: center;
+  display: flex;
+  padding-left: 120px; 
+  }
+  
+  #container > header > ul > li {
+    line-height:60px;
+    margin: 0 0px;
+    padding:0;
+    text-align:center;
+  } 
+  
+  #container > header > ul > li > a {
+    position:relative;
+    margin: 0 20px;
+      color:white;
+      text-decoration: none;
+  }
+  
+  .hoverBlue:hover{
+    color: rgb(0, 121, 255);
+  }
+  #container > header > ul > li:hover {
+     border-bottom: 2px solid white; 
+    color: rgb(0, 121, 255);
+  }
+  #container > header > ul > .dropdown:hover >  .dd {
+    display:block;
+    border-radius: bottom 10px red;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  #container > header > ul > li > div {
+    position:absolute;
+    padding: 0 10px;
+    background-color:rgb(255, 255, 255);
+    display:none;
+    background-color:black;
+  }
+  
+  #container > header > ul > li > div > ul {
+    margin:0px 0 10px 0;
+    padding:0;
+    list-style:none;
+  }
+  
+  #container > header > ul > li > div > ul > li > a {
+    padding : 5px;
+      color:white;
+  }
+  
+  
+  .rigth-container{
+    color:white;
+    list-style: none;
+  display: flex;
+  padding-right: 1rem;
+}
+.rigth-container i{
+  display: flex;
+  padding-right: 1rem;
+
+}
+.rigth-container li a {
+  color:white;
+text-decoration: none;
+padding-right: 1rem;
+}
+
+div #menu-btn{
+  color: white;
+}
+/*------------ carousel ---------*/
+  main {
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 0px 0px 3px rgb(6, 6, 6);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 100%;
+    height: 100%;
+   animation-duration: 5s;
+  }
+  .slide {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* .carousel-inner h1{
+    float: left;
+  } */
+  /* ---------Pre and Next button------ */
+  .nav{
+    text-align: right;
+    background-color: black;
+      color: white;
+      margin-top: 320px;
+      padding: 18px;
+      border-radius: 10px;
+      font-size: 23px;
+      position: absolute; 
+    position: sticky; 
+      top: 30%;
+      opacity: .5;
+      transition: .9s ease-in;
+  }
+  .nav button {
+    font-size: 30px;
+    padding: 10px;
+  }
+  
+  /*------------ Hero-section-------------------------*/
+  
+ html, body{
+    height: 100%;
+    width: 100%;
+    } 
+   #card_container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+       /* border: 1px solid red;  */
+   } 
+    #card_container> div{
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px; 
+   /* border: 1px solid red;  */
+   }
+    
+    #card_container>div a>img{
+    height: 100%;
+    width: 100%; 
+   /* border: 1px solid red;  */
+   object-fit:cover; 
+   }
+    
+    #card_container> div >a{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    
+    }
+    
+
+#card_container> div >a{
+height: 100%;
+width: 100%;
+object-fit: contain;
+
+}  
+
+/* fjghjfghfjghsfjghs */
+
+/* vgdhfvgdhfdjfghfgj */
+
+/* * <!-- ------------footer upper part --------------> */ 
+
+  .mainContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    background-color: #191818;
+    color: white; 
+  } 
+
+
+  #trending h4{
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+  } 
+
+   #trending ul li{
+    text-align: justify;
+    gap: 5px;
+    margin: 7px;
+    list-style: none;
+    color: white;
+  }
+  
+  #trending ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  
+ /* <!-----------------statement part 1---------------->  */
+  .statement{
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 50px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 20px;
+    /* background-color: #3e0edb; */
+    color: white;
+  }
+
+/* --- Read more------  */
+  #more{        
+    display: none;
+  }
+
+  button{
+    color: blue;
+    border: none;
+  }
+/* -------------------------------footer design---------------------------------------------- */
+
+.footer-container {
+    /* background-color: #111; */
+    color: #fff;
+    padding: 40px 0;
+    object-position: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  #smIcons{
+    font-size: 25px;
+    padding: 10px;
+    gap: 15px;
+    color: rgb(13, 13, 13);
+    margin-left: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: white; 
+  }
+
+  #icon {
+    display: flex;
+  }
+
+  #icon h3{
+    font-size: 40px;
+    padding: 25px;
+  }
+  #trending {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+  }
+  
+  #trending h4 {
+    color: #ece7e7;
+    margin-bottom: 10px;
+  }
+  
+  #trending ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #trending ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  #trending ul li a:hover {
+    color: #fff;
+  }
+  
+  .statement {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  #content {
+    margin-bottom: 30px;
+  }
+  
+  #content h3 {
+    color: #c1bcbc;
+    margin-bottom: 10px;
+  }
+  
+  #content p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  #myBtn {
+    background-color: transparent;
+    border: none;
+    color: #283397;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  #footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 0;
+  }
+  
+  #first, #sec, #third, #fourth {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+  }
+  
+  #icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #icon i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #e50914;
+  }
+  
+  #smIcons i {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  #smIcons i:hover {
+    color: #fff;
+  }
+  
+  #sec ul, #third ul, #fourth ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #sec ul li a, #third ul li a, #fourth ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  #sec ul li a:hover, #third ul li a:hover, #fourth ul li a:hover {
+    color: #fff;
+  }
+  
+  .copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 40px;
+  }
+  /* ----------Socia; media icons ------------- */
+  #smIcons{
+    font-size: 25px;
+    padding: 10px;
+    gap: 15px;
+    color: rgb(250, 237, 237);
+    margin-left: 35px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: white; 
+  }
+
+  #icon {
+    display: flex;
+  }
+
+  #icon h3{
+    font-size: 40px;
+    padding: 25px;
+  }
+  
+  #sec h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+     margin-left: 20px;
+     color: white;
+  }
+  
+  #sec ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    color: white;
+  }
+  
+  #sec ul li a{
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: white;
+  } 
+  
+  #thrid h2 {
+    margin-top: 10px;
+  margin-bottom: 15px;
+  color: white;
+  }
+  
+  #thrid ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    color: white;
+  }
+  #thrid ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  
+  }
+  #fourth h2{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: white;
+  }
+  #fourth ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    color: white;
+  }
+  #fourth ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  
+@media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
+    }
+  
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+  
+    .slider-wrapper .image-list .image-item {
+      width: 280px;
+      height: 380px;
+    }
+  
+    .slider-scrollbar .scrollbar-thumb {
+      width: 20%;
+    }
+  }
+    
